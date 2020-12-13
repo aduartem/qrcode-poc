@@ -1,12 +1,10 @@
-<div style="text-align:center">
-  <h1>
-    @techiediaries/ngx-qrcode demo 
-  </h1>
+<div class="container">
+  <h1>QR code generator</h1>
+  <ngx-qrcode 
+    [elementType]="elementType" 
+    [value]="value"
+    cssClass="aclass"
+    errorCorrectionLevel="errorCorrectionLevel">
+  </ngx-qrcode>
+  <input [(ngModel)]="value" value="">
 </div>
- 
-<ngx-qrcode 
-  [elementType]="elementType" 
-  [value]="value"
-  cssClass="aclass"
-  errorCorrectionLevel="L">
-</ngx-qrcode>
