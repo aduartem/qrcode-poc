@@ -3,8 +3,9 @@
   <ngx-qrcode 
     [elementType]="elementType" 
     [value]="value"
-    cssClass="aclass"
+    cssClass="qrCode"
     errorCorrectionLevel="errorCorrectionLevel">
   </ngx-qrcode>
-  <input [(ngModel)]="value" value="">
+  <input [(ngModel)]="value" value=""> <br><br>
+  <button (click)="downloadQRCode()">Download QRCode</button>
 </div>
