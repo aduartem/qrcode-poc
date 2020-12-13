@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'qrcode-poc';
+  elementType = 'url';
+  value = 'http://www.youtube.com';
 }
